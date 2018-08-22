@@ -33,14 +33,6 @@
             "get": {
                 "description": "Tells you who you are.",
                 "operationId": "/whoami",
-                "parameters": [{
-                    "name": "code",
-                    "in": "path",
-                    "description": "",
-                    "required": true,
-                    "type": "string",
-                    "default": "master"
-                }],
                 "responses": {}
             }
         },
