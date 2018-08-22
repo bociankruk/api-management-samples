@@ -32,7 +32,7 @@
         "/whoami": {
             "get": {
                 "description": "Tells you who you are.",
-                "operationId": "/status",
+                "operationId": "/whoami",
                 "parameters": [{
                     "name": "code",
                     "in": "path",
