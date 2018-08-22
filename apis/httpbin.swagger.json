@@ -2,8 +2,8 @@
     "swagger": "2.0",
     "info": {
         "title": "httpbin.org",
-        "description": "API Management facade for a very handy and free online HTTP tool.",
-        "version": "1.0"
+        "description": "API Management facade for a very handy and free online HTTP tool. Updated API.",
+        "version": "1.1"
     },
     "host": "httpbin.org",
     "schemes": [
@@ -25,6 +25,21 @@
                     "enum": [
                         200
                     ]
+                }],
+                "responses": {}
+            }
+        },
+        "/whoami": {
+            "get": {
+                "description": "Tells you who you are.",
+                "operationId": "/status",
+                "parameters": [{
+                    "name": "code",
+                    "in": "path",
+                    "description": "",
+                    "required": true,
+                    "type": "string",
+                    "default": "master"
                 }],
                 "responses": {}
             }
